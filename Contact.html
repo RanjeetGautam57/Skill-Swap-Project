@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
         .bgmycolor{
-            background-color: #f3ecda;
+            background-color: #c89660;
         }
         .mt{
             margin-top: 100px;
@@ -26,27 +26,38 @@
         .mb{
             margin-bottom: 50px;
         }
+        .w{
+            width: 500px;
+            
+        }
+        .h{
+            height: 600px;
+            background-size: cover;
+           
+        }
     </style>
 </head>
 <body class="bgmycolor">
     <div class="container-fluid  mx-auto">
         <div class="row mt">
-            <div class="col-sm-10 mx auto">
+            <div class="col-sm-10 mx-auto">
                 <div class="row">
-                    <div class="col-6"></div>
-                    <div class="col-6  shadow-lg">
+                    <div class="col-6 w m-0 p-0">
+                        <img src="images/images.png" alt="" class="img-fluid h">
+                    </div>
+                    <div class="col-6 w rounded-lg bg-light ">
                         <div class="text-center fs-1 mt-5 text-secondary">Contact<b style="color: #472b15;">  Us</b></div>
                         <form>
                             <div class="text-center mt-3" style="color: #472b15;">
                             <input type="text" name="name" id="" placeholder="Enter Your Name" class="in ps-3">
                              <input type="email" name="email" id="" placeholder="Enter Your Email Address" class="in ps-3">
                               <input type="number" name="mob" id="" placeholder="Enter Your Mobile Number" class="in ps-3">
-                              <input type="text" name="selfskill" id="" placeholder="What skills do you have?" class="in ps-3">
-                              <input type="text" name="selfskill" id="" placeholder="Which skill do you want to learn?" class="in ps-3">
+                          
                               <textarea class="w-75 mt-4" placeholder="">Send Message Us</textarea>
-                             
+                             <button class=" btn btn-dark mb mt-4 w-75 rounded-5" style="background-color: #472b15;"><a href="registration.html" class="text-light  fs-3 text-decoration-none ">Contact Us</a></button>
                             </div>
-                            <a href="registration.html" class="text center fs-3 text-decoration-none">Contact Us</a>
+                            
+                            
                         </form>
                     </div>
                 </div>

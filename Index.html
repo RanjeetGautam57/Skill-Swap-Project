@@ -2,50 +2,58 @@
 <html lang="en">
 <head>
  <link rel="stylesheet" href="css/bootstrap.css">
+ <link rel="stylesheet" href="index.css">
  <style>
-    .h{
-        min-height: 600px !important;
-    }
-    .bg-color1{
-        background-color:#c89660 ;
-    }
-    .text-color1{
-        color:#402611;
-    }
-    .fs1{
-        font-size: 80px;
-    }
-    .t{
-        color:#c1432e;
-         font-size: 60px;
-        font-family: 'Caveat', cursive;
-          text-shadow: 2px 2px 1px rgb(93, 86, 86);
-          transform: rotate(-20deg);
-    }
-    .pt1{
-        padding-top: -50px;
-        box-sizing: border-box;
-    }
-    .pt{
-        margin-top: -80px;
-    }
-    .ps1{
-        padding-left: 100px;
-    }
-    .s{
-        text-shadow: 2px 2px 1px black;
-    }
+ 
  </style>
 </head>
 <body>
     <div class="comtainer-fluid">
-        <div class="row bg-color1 h">
-            <div class="col-6 ms-5 mx-auto mt-5 ps1 s">
-                <span class="text-color1 fs1  pt1 ps-5" style="font-weight: bolder;">Pin what you <h2 class="t text-end">teach</h2></span> 
-                <h2 class="text-color1 fs1 ps-5 pt" style="font-weight: bold;">Find what You <h2 class="t text-end">need</h2></h2>
-            </div>
-            <div class="col-6"></div>
-        </div>
+        <div class="row bg-color1  fixed-top">
+               <nav class="navbar navbar-expand-lg navbar-dark  ">
+
+                    <img src="images/l.png" alt="" class="h2 img-fluid bg-color1">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse bg-color1" id="navMenu">
+      <ul class="navbar-nav ms-5 me-auto ab">
+        <li class="nav-item"><a class="nav-link ab" href="Index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link ab" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link ab" href="#services">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link ab" href="#contact">Browse Skills</a></li>
+        <li class="nav-item"><a class="nav-link ab" href="Contact.html">Contact Us </a></li>
+        <button class="btn btn-light ms-5 mt-0 mb-0 ps-4 pe-4 p-0 ac"><a class="nav-link ac" href="Login.html">Login</a></button>
+        <button class="btn btn-light ms-3 mt-0 mb-0 ps-4 pe-4 p-0 ac"><a class="nav-link ac" href="registration.html">Register</a></button>
+      </ul>
+     
     </div>
+    </nav>
+  </div>
+
+       
+      
+      </div>
+      <div class="row">
+        <div  class="col-sm-12">
+            <div class="video-hero" id="home">
+  <video autoplay muted loop playsinline>
+    <source src="images/No Copyright Video, Background, Green Screen, Motion Graphics, Animated Background, Copyright Free - NO COPYRIGHT MOTION GRAPHICS (1080p, h264).mp4" type="video/mp4">
+    Aapka browser video tag support nahi karta.
+  </video>
+  <div class="video-overlay"></div>
+  <div class="video-hero-content">
+    <h1 style="color:#245F73 ;">Pin What You <span style="font-family: cursive; color: #e9d3c1;">teach</span></h1>
+    <h1 style="color:#245F73 ;">Pin What You <span style="font-family: cursive; color: #e9d3c1;">need</span></h1>
+        <p> Skill Swap is a community board where knowledge is the only currency. Trade an hour of guitar lessons for an hour of Python — no fees, no subscriptions, just people teaching people  </p> 
+         <a href="#about" class="btn btn-primary btn-lg mt-3">Explore More</a>
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="row"></div>
+      <div class="row"></div>
+    </div>
+     </div>
 </body>
 </html>

@@ -57,7 +57,7 @@
 
         .contact-info {
             width: 50%;
-            min-height: 620px;
+            min-height: 400px !important;
             position: relative;
             padding: 55px;
             color: white;
@@ -83,7 +83,7 @@
             content: "";
             position: absolute;
             width: 250px;
-            height: 250px;
+            height: 100px;
             border-radius: 50%;
             background: rgba(255,255,255,0.08);
             top: -100px;
@@ -94,7 +94,7 @@
             content: "";
             position: absolute;
             width: 180px;
-            height: 180px;
+            height: 100px;
             border-radius: 50%;
             background: rgba(255,255,255,0.08);
             bottom: -80px;
@@ -103,6 +103,7 @@
 
         .info-content {
             position: relative;
+       
             z-index: 2;
         }
 
@@ -133,7 +134,7 @@
         }
 
         .contact-info p {
-            color: #245F73 ;
+            color: #d8dfe2 ;
             line-height: 1.8;
             font-size: 16px;
             max-width: 450px;
@@ -318,12 +319,13 @@
             .contact-info,
             .contact-form {
                 width: 100%;
-                min-height: auto;
+                min-height: 300px !important;
             }
 
             .contact-info {
                 padding: 40px 28px;
                 min-height: 430px;
+             
             }
 
             .contact-form {
@@ -348,6 +350,13 @@
                 font-size: 28px;
             }
         }
+        .h{
+            min-height: 300px !important;
+        }
+        .ab{
+            text-decoration: none;
+            border: none;
+        }
 
     </style>
 </head>
@@ -361,7 +370,7 @@
 
         <div class="contact-info">
 
-            <div class="info-content">
+            <div class="info-content h">
 
                 <div class="brand-icon">
                     <i class="bi bi-people-fill"></i>
@@ -511,7 +520,7 @@
                 <button type="submit" class="submit-btn">
 
                     <i class="bi bi-send-fill me-2"></i>
-                    Send Message
+                   <a href="registration.html" class="text-light text-decoration none a">Send Message</a>
 
                 </button>
 

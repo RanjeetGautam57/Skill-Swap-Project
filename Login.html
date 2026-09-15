@@ -1,10 +1,117 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
 
-    <title>Document</title>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <style>
+        body {
+            background: #c9c7c7;
+        }
+
+        .r {
+            height: 700px;
+            margin-top: 100px;
+            width: 1000px;
+            margin-left: 70px;
+        }
+
+        .wlcm {
+            background: #245F73;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .form {
+            background: #f4d0b2;
+            border-radius: 0px 10px 10px 0px;
+        }
+
+        h2 {
+            color: #ead5c4;
+            margin-top: 120px !important;
+            text-shadow: 2px 10px 5px rgb(100, 98, 98);
+
+
+        }
+        i{
+           font-size: 25px;
+           margin-bottom: 10px;
+          
+        }
+
+        p {
+            color: #ead5c4;
+            text-shadow: 2px 2px 5px rgb(117, 110, 110);
+        }
+
+        h4 {
+            color: #245F73;
+            text-shadow: 2px 2px 5px rgb(117, 110, 110);
+            font-size: 35px;
+            margin-left: 100px;
+           
+        }
+
+        input {
+            background-color: #ead5c4 !important;
+
+
+        }
+
+        .w {
+            max-width: 350px !important;
+            margin-left: 60px !important;
+            border: none;
+        }
+
+        .btn {
+            background: #245F73 !important;
+            margin-left: 120px;
+            height: 40px;
+            border-radius: 10px;
+            color: #f4d0b2;
+        }
+        .p{
+            margin-left: 140px;
+            color: #dc8b49;
+            text-shadow: none;
+            text-decoration: #dc8b49;
+            font-size: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: #245F73;
+           
+        }
+        .reg{
+            margin-left: 60px;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row r">
+            <div class="col-sm-6  h-50 wlcm">
+                <h2 class="fw-bold  text-center">Good to see you again</h2>
+                <p class="  text-center mt-2">Sign in and pick up where you left off</p>
+            </div>
+            <div class="col-sm-6 h-50 form">
+                <h4 class=" mt-5 fw-bold">Login Form <i class="fa-solid fa-user mt-2"></i></h4>
+                <div class="input-group">
+                    <input type="text" placeholder="Email" class="mt-3 form-control w ps-3">
+
+                </div>
+                <div class="input-group">
+                    <input type="password" placeholder="Password" class="mt-3 form-control w ps-3">
+
+                </div>
+                <a href="Index.html"><button class="border-0 mt-3 w-50 btn ">Continue</button></a>
+                 <p class="p mt-2 fw-bold">You don’t have an account yet?<br><a href="registration.html" class="reg">Register here</a></p>
+
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

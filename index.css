@@ -32,6 +32,11 @@
     background-color: #245F73;
     color: #E9E3DE !important;
  }
+ .b1{
+    color: #245F73;
+    background-color: #E9E3DE !important;
+    border-radius: 20px !important;
+ }
  .active :hover{
     color:rgba(11, 11, 11, 0.637)
  }

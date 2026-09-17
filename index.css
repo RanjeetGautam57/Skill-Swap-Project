@@ -127,10 +127,15 @@
     min-height: 60px !important;
     min-width: 10px !important;
     border-radius: 20px !important;
+   transition: 1s;
+  }
+  .c:hover{
+     box-shadow: 0px 0px 10px 5px white !important;
+     transition: 1s;
   }
   .m{
     margin-left: 80px !important;
-    transform: translateY(-23px);
+    transform: translateY(-27px);
     background: linear-gradient(45deg,rgb(7, 7, 7),rgb(65, 65, 68),rgb(51, 47, 47)) !important;
     box-shadow: 0px 0px 10px 0px white ;
     font-size: 30px !important;

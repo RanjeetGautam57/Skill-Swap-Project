@@ -34,8 +34,14 @@
  }
  .b1{
     color: #245F73;
-    background-color: #E9E3DE !important;
+    background-color: #eadbce !important;
     border-radius: 20px !important;
+    box-shadow: 0px 0px 3px 0px rgb(250, 247, 247) !important;
+       transition: 1s;
+ }
+ .b1:hover{
+       transform: scale(90%);
+       transition: 2s;
  }
  .active :hover{
     color:rgba(11, 11, 11, 0.637)
@@ -43,7 +49,7 @@
 
 
 
- /*Section 2*/
+
    .video-hero {
     position: relative;
     width: 100%;
@@ -64,7 +70,7 @@
     z-index: 1;
   }
 
-  /* Dark overlay taaki text acche se dikhe */
+ 
   .video-overlay {
     position: absolute;
     top: 0;
@@ -112,4 +118,23 @@
 
   section {
     padding: 60px 0;
+  }
+
+
+  .c{
+    background-color: #eadbce;
+    color: black;
+    min-height: 60px !important;
+    min-width: 10px !important;
+    border-radius: 20px !important;
+  }
+  .m{
+    margin-left: 80px !important;
+    transform: translateY(-23px);
+    background: linear-gradient(45deg,rgb(7, 7, 7),rgb(65, 65, 68),rgb(51, 47, 47)) !important;
+    box-shadow: 0px 0px 10px 0px white ;
+    font-size: 30px !important;
+  }
+  .fs{
+    font-size: 15px !important;
   }

@@ -15,7 +15,7 @@
         }
 
         .reg {
-            height: 500px;
+            min-height: 500px;
             background: #f4d0b2;
             margin: 30px auto;
 
@@ -36,6 +36,21 @@
 
 
         }
+        .slt{
+            height: 40px !important;
+           
+            
+        }
+        .btn{
+            background: #55361e !important;
+            color: #f4d0b2;
+            font-weight: bold;
+        }
+        span{
+            font-size: 17px !important;
+            font-weight: bold;
+            color: #55361e;
+        }
         
     </style>
 </head>
@@ -48,15 +63,32 @@
 
                 <form action="" class="mx-auto">
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 " style="color: #55361e;">Full Name</label> <br>
-                    <input type="text" class="form-control ms-5 w-75 " placeholder="Full Name">
+                    <input type="text" class="form-control ms-5 w-75 " placeholder="Full Name" required id="i1">
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 mt-2" style="color: #55361e;">Email</label> <br>
-                    <input type="text" class="form-control ms-5 w-75" placeholder="Email">
+                    <input type="text" class="form-control ms-5 w-75" placeholder="Email" required id="i2">
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 mt-2" style="color: #55361e;">Password</label> <br>
-                    <input type="password" class="form-control ms-5 w-75" placeholder="Password">
+                    <input type="password" class="form-control ms-5 w-75" placeholder="Password" required id="i3">
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 mt-2" style="color: #55361e;">Confirm Password</label> <br>
-                    <input type="password" class="form-control ms-5 w-75" placeholder="Confirm Password">
-                    <span class="fs-5 mt-5 mx-5">A skill you can teach</span>
-                    <select class="mt-2 ms-5 border-0 w-75 " style="background-color: #ead5c4;">
+                    <input type="password" class="form-control ms-5 w-75" placeholder="Confirm Password" required id="i4 ">
+                    <span class=" mt-5 mx-5">A skill you can teach</span>
+                    <select class="mt-2 ms-5 border-0 w-75 slt" style="background-color: #ead5c4;" required>
+                        
+                        <option>Programming</option>
+                        <option>Web Development</option>
+                        <option>Data Analysis</option>
+                        <option>Cloud Computing</option>
+                        <option>Cyber Security</option>
+                        <option>Networking and IT Support</option>
+                        <option>Database Management</option>
+                        <option>Communication</option>
+                        <option>Leadership</option>
+                        <option>Teamwork and collaboration</option>
+                        <option>Time management</option>
+                        <option>Presentation skills</option>
+                        <option>Conflict resolution</option>
+                    </select><br>
+                     <span class=" mx-5">A skill you want to learn</span>
+                    <select class="mt-2 ms-5 border-0 w-75 slt mb-0" style="background-color: #ead5c4;" required >
                         
                         <option>Programming</option>
                         <option>Web Development</option>
@@ -72,12 +104,33 @@
                         <option>Presentation skills</option>
                         <option>Conflict resolution</option>
                     </select>
+                    <p class="mx-5 mt-1 fw-bold" style="font-size: 14px !important;">You can add more skills later from your dashboard</p>
+                    <button class="btn w-75 mx-5 border-0" onclick="register()">Create Account</button>
+                    <p class="text-center">Already on the board?<a href="Login.html" style="color: rgb(34, 99, 101);font-weight: bold;text-decoration: none;">Log in</a></p>
                     
                 </form>
             </div>
 
         </div>
     </div>
+    <script>
+        function register()
+        {
+             var a=document.getElementById("i1").value
+             var b=document.getElementById("i2").value
+             var c=document.getElementById("i3").value
+             var d=document.getElementById("i4").value
+
+             if( Fullname==="" || Email==="" || Password==="" || ConfirmPassword==="" )
+             {
+                alert("Please fill all the field")
+                return;
+             }
+             else{
+                
+             }
+        }
+    </script>
 </body>
 
 </html>

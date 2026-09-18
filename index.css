@@ -143,3 +143,86 @@
   .fs{
     font-size: 15px !important;
   }
+
+  .c {
+    border: 3px solid rgb(73, 61, 61);
+    border-radius: 15px;
+    background-color: #E9E3DE;
+}
+.skill-row {
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.m {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 auto 8px;
+}
+
+.c span {
+    font-size: 14px;
+}
+
+
+
+
+@media (max-width: 576px) {
+
+    .trending-section h3 {
+        font-size: 28px !important;
+    }
+
+    .trending-section h2 {
+        font-size: 20px !important;
+        margin-top: 20px;
+    }
+
+    .trending-section hr {
+        width: 70% !important;
+        height: 5px !important;
+    }
+
+    .trending-box {
+        width: 95% !important;
+        margin: 30px auto !important;
+        padding: 20px 10px !important;
+        border-radius: 25px !important;
+    }
+
+    .skill-row {
+          display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px !important;
+         
+         
+    }
+
+    .skill-row .c {
+        width: 90% !important;
+        max-width: 350px;
+        margin: 0 !important;
+        font-size: 17px !important;
+    }
+
+    .skill-row .c span {
+        font-size: 13px !important;
+    }
+}
+
+
+
+.b1 {
+    background-color: #E9E3DE;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+}
+
+.b1:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}

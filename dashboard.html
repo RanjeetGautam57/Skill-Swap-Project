@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Skill-Swap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <style>
+        body {
+            background-color: #245F73;
+        }
+
+        .dashboard {
+            background-color: #eadbce;
+            min-height: 90vh;
+            border-radius: 15px;
+        }
+
+        .brand {
+            color: #ead5c4;
+            font-weight: bold;
+        }
+
+        .welcome {
+            color: #245F73;
+            font-weight: bold;
+        }
+
+        .skill-card {
+            background-color: #f4d0b2;
+            border: none;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-icon {
+            font-size: 35px;
+            color: #245F73;
+        }
+
+        .skill-name {
+            color: #245F73;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .section-title {
+            color: #55361e;
+            font-weight: bold;
+        }
+
+        .custom-btn {
+            background-color: #245F73;
+            color: #ead5c4;
+            border: none;
+        }
+
+        .custom-btn:hover {
+            background-color: #55361e;
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container py-4">
+
+        <div class="dashboard shadow p-3 p-md-4">
+
+          
+            <nav class="navbar navbar-expand-lg mb-4">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand brand" href="#">
+                        <i class="fa-solid fa-right-left"></i>
+                        Skill Swap
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#dashboardMenu">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="dashboardMenu">
+
+                        <ul class="navbar-nav ms-auto text-center">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Dashboard
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Find Skills
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.html">
+                                    <i class="fa-solid fa-user"></i>
+                                    Profile
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <button class="btn custom-btn px-3" onclick="logout()">
+                                    Logout
+                                </button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+
+            
+            <div class="mb-4">
+
+                <h2 class="welcome">
+                    Welcome, <span id="username">User</span> 👋
+                </h2>
+
+                <p class="text-muted mb-0">
+                    Exchange your skills, connect with others and
+                    learn something new.
+                </p>
+
+            </div>
+
+
+          
+            <h4 class="section-title mb-3">
+                My Skills
+            </h4>
+
+            <div class="row g-4">
+
+           
+                <div class="col-12 col-md-6">
+
+                    <div class="card skill-card shadow-sm h-100">
+
+                        <div class="card-body p-4">
+
+                            <i class="fa-solid fa-chalkboard-user skill-icon"></i>
+
+                            <h5 class="section-title mt-3">
+                                I Can Teach
+                            </h5>
+
+                            <p class="skill-name mb-2" id="teachSkill">
+                                Loading...
+                            </p>
+
+                            <p class="text-muted mb-0">
+                                Share your knowledge and help
+                                someone learn this skill.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+           
+                <div class="col-12 col-md-6">
+
+                    <div class="card skill-card shadow-sm h-100">
+
+                        <div class="card-body p-4">
+
+                            <i class="fa-solid fa-book-open-reader skill-icon"></i>
+
+                            <h5 class="section-title mt-3">
+                                I Want To Learn
+                            </h5>
+
+                            <p class="skill-name mb-2" id="learnSkill">
+                                Loading...
+                            </p>
+
+                            <p class="text-muted mb-0">
+                                Find someone who can teach you
+                                this skill.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card skill-card shadow-sm border-0 mt-4">
+
+                <div class="card-body p-4">
+
+                    <h4 class="section-title mb-3">
+                        <i class="fa-solid fa-users"></i>
+                        Recommended Skill Partners
+                    </h4>
+
+                    <p class="text-muted">
+                        People who can help you learn or learn from you.
+                    </p>
+
+                  
+                    <div id="skillPartners" class="row g-3 mt-2">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+           
+            <div class="row g-3 mt-3">
+
+                <div class="col-12 col-sm-4">
+
+                    <button class="btn custom-btn w-100 py-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Find a Skill
+                    </button>
+
+                </div>
+
+                <div class="col-12 col-sm-4">
+
+                    <button class="btn custom-btn w-100 py-2">
+                        <i class="fa-solid fa-user-group"></i>
+                        Find Partners
+                    </button>
+
+                </div>
+
+                <div class="col-12 col-sm-4">
+
+                    <button class="btn custom-btn w-100 py-2">
+                        <i class="fa-solid fa-user"></i>
+                        My Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+  
+    <script src="js/bootstrap.bundle.js"></script>
+
+ 
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

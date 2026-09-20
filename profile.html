@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Skill-Swap</title>
+
+  
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+  
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <style>
+
+        body {
+            background-color: #245F73;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #eadbce;
+        }
+
+        .navbar-brand {
+            color: #245F73;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .nav-link {
+            color: #245F73;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #55361e;
+        }
+
+        .profile-container {
+            max-width: 850px;
+            margin: 40px auto;
+        }
+
+        .profile-card {
+            background-color: #eadbce;
+            border-radius: 20px;
+        }
+
+        .profile-header {
+            background-color: #f4d0b2;
+            border-radius: 20px 20px 0 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            background-color: #ddd;
+        }
+
+        .profile-name {
+            color: #245F73;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .profile-email {
+            color: #55361e;
+        }
+
+        .info-card {
+            background-color: #f4d0b2;
+            border-radius: 15px;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .info-title {
+            color: #245F73;
+            font-weight: bold;
+        }
+
+        .info-text {
+            color: #55361e;
+            margin-bottom: 0;
+        }
+
+        .custom-btn {
+            background-color: #245F73;
+            color: white;
+        }
+
+        .custom-btn:hover {
+            background-color: #1c4c5c;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    
+    <nav class="navbar navbar-expand-lg shadow-sm">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="dashboard.html">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                Skill Swap
+            </a>
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">
+                            <i class="fa-solid fa-house"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="profile.html">
+                            <i class="fa-solid fa-user"></i>
+                            Profile
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <button class="btn custom-btn px-3"
+                                onclick="logout()">
+
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Logout
+
+                        </button>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+  
+
+    <div class="container profile-container">
+
+        <div class="card profile-card border-0 shadow-lg">
+
+
+          
+
+            <div class="profile-header">
+
+                <img id="profileImage"
+                     src="https://via.placeholder.com/120"
+                     class="profile-image"
+                     alt="Profile Photo">
+
+                <h2 id="profileName"
+                    class="profile-name">
+                    User Name
+                </h2>
+
+                <p id="profileEmail"
+                   class="profile-email mb-0">
+                    user@email.com
+                </p>
+
+            </div>
+
+
+
+         
+
+            <div class="card-body p-4">
+
+                <div class="row g-4">
+
+
+                
+
+                    <div class="col-12">
+
+                        <div class="info-card">
+
+                            <h5 class="info-title">
+                                <i class="fa-solid fa-circle-info"></i>
+                                About Me
+                            </h5>
+
+                            <p id="profileBio"
+                               class="info-text">
+                                No bio added yet.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="info-card">
+
+                            <h5 class="info-title">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                Skills I Can Teach
+                            </h5>
+
+                            <p id="profileTeachSkill"
+                               class="info-text">
+                                Loading...
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                
+
+                    <div class="col-12 col-md-6">
+
+                        <div class="info-card">
+
+                            <h5 class="info-title">
+                                <i class="fa-solid fa-book-open"></i>
+                                Skills I Want To Learn
+                            </h5>
+
+                            <p id="profileLearnSkill"
+                               class="info-text">
+                                Loading...
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    
+
+                    <div class="col-12">
+
+                        <div class="info-card">
+
+                            <h5 class="info-title">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                Experience Level
+                            </h5>
+
+                            <p id="profileExperience"
+                               class="info-text">
+                                Not specified
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            
+
+                <div class="text-center mt-4">
+
+                    <button class="btn custom-btn px-4"
+                            onclick="editProfile()">
+
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        Edit Profile
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

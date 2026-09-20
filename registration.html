@@ -1,6 +1,7 @@
 <html>
 
 <head>
+     <title>Skill-Swap</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <style>
@@ -61,7 +62,7 @@
             <div class="col-sm-6 mx-auto  reg">
                 <h4 class="text-center mb-4 ">Start Your Journey</h4>
 
-                <form action="" class="mx-auto">
+                <form id="registrationForm" class="mx-auto">
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 " style="color: #55361e;">Full Name</label> <br>
                     <input type="text" class="form-control ms-5 w-75 " placeholder="Full Name" required id="i1">
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 mt-2" style="color: #55361e;">Email</label> <br>
@@ -69,9 +70,9 @@
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 mt-2" style="color: #55361e;">Password</label> <br>
                     <input type="password" class="form-control ms-5 w-75" placeholder="Password" required id="i3">
                     <label for="" class="ms-5 fw-semibold fs-5 ps-2 mt-2" style="color: #55361e;">Confirm Password</label> <br>
-                    <input type="password" class="form-control ms-5 w-75" placeholder="Confirm Password" required id="i4 ">
+                    <input type="password" class="form-control ms-5 w-75" placeholder="Confirm Password" required id="i4">
                     <span class=" mt-5 mx-5">A skill you can teach</span>
-                    <select class="mt-2 ms-5 border-0 w-75 slt" style="background-color: #ead5c4;" required>
+                    <select  id="teachSkill" class="mt-2 ms-5 border-0 w-75 slt" style="background-color: #ead5c4;" required>
                         
                         <option>Programming</option>
                         <option>Web Development</option>
@@ -88,7 +89,7 @@
                         <option>Conflict resolution</option>
                     </select><br>
                      <span class=" mx-5">A skill you want to learn</span>
-                    <select class="mt-2 ms-5 border-0 w-75 slt mb-0" style="background-color: #ead5c4;" required >
+                    <select   id="learnSkill" class="mt-2 ms-5 border-0 w-75 slt mb-0" style="background-color: #ead5c4;" required >
                         
                         <option>Programming</option>
                         <option>Web Development</option>
@@ -105,7 +106,7 @@
                         <option>Conflict resolution</option>
                     </select>
                     <p class="mx-5 mt-1 fw-bold" style="font-size: 14px !important;">You can add more skills later from your dashboard</p>
-                    <button class="btn w-75 mx-5 border-0" onclick="register()">Create Account</button>
+                    <button type="submit" class="btn w-75 mx-5 border-0" onclick="register()">Create Account</button>
                     <p class="text-center">Already on the board?<a href="Login.html" style="color: rgb(34, 99, 101);font-weight: bold;text-decoration: none;">Log in</a></p>
                     
                 </form>
@@ -113,24 +114,9 @@
 
         </div>
     </div>
-    <script>
-        function register()
-        {
-             var a=document.getElementById("i1").value
-             var b=document.getElementById("i2").value
-             var c=document.getElementById("i3").value
-             var d=document.getElementById("i4").value
 
-             if( Fullname==="" || Email==="" || Password==="" || ConfirmPassword==="" )
-             {
-                alert("Please fill all the field")
-                return;
-             }
-             else{
-                
-             }
-        }
-    </script>
+    <script src="js/registration.js"></script>
+
 </body>
 
 </html>

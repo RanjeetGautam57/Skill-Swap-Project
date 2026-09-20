@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <title>Skill-Swap</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.min.css">
 
@@ -106,21 +107,17 @@
                     <input type="password" placeholder="Password" class="mt-3 form-control w ps-3" required id="password">
 
                 </div>
-                <a href="Index.html"><button class="border-0 mt-3 w-50 btn " onclick="login()">Continue</button></a>
+               <button type="button" class="border-0 mt-3 w-50 btn" onclick="login()">
+                      Continue
+              </button>
                  <p class="p mt-2 fw-bold">You don’t have an account yet?<br><a href="registration.html" class="reg">Register here</a></p>
 
             </div>
         </div>
     </div>
-    <script>
-       function login()
-       {
-               var x=document.getElementById("login").value
-               var y=document.getElementById("password").value
-               
-           
-       } 
-    </script>
+
+    <script src="js/login.js"></script>
+  
 </body>
 
 </html>

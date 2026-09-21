@@ -69,7 +69,7 @@ if (matches.length === 0) {
 
     skillPartners.innerHTML = `
         <div class="col-12">
-            <div class="alert alert-secondary">
+            <div class="alert alert-warning text-light  w-50" style="background:rgb(36, 95, 115)  !important;">
                 <i class="fa-solid fa-circle-info"></i>
                 No skill partners found yet.
             </div>
@@ -99,7 +99,7 @@ if (matches.length === 0) {
         skillPartners.innerHTML += `
             <div class="col-12 col-md-6 col-lg-4">
 
-                <div class="card h-100 border-0 shadow-sm">
+                <div class="card h-100 border-0 shadow-sm " >
 
                     <div class="card-body">
 

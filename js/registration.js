@@ -48,4 +48,23 @@ document.getElementById("registrationForm").addEventListener("submit", function 
 
     // Go to login page
     window.location.href = "Login.html";
+
+
+//     function goToLogin() {
+
+//     window.location.href = "Login.html";
+
+// }
+
+
+// // Close success alert
+// function closeAlert() {
+
+//     document
+//         .getElementById("successAlert")
+//         .classList
+//         .add("d-none");
+
+
+
 });

@@ -195,6 +195,54 @@ function connectWithUser(email) {
         return;
     }
 
+
+    // Existing connection requests
+    let connectionRequests =
+        JSON.parse(localStorage.getItem("connectionRequests")) || [];
+
+
+    // Check already requested
+    let existingRequest = connectionRequests.find(function (request) {
+
+        return (
+            request.from === user.email &&
+            request.to === partner.email
+        );
+
+    });
+
+
+    if (existingRequest) {
+
+        alert("Connection request already sent!");
+
+        return;
+    }
+
+
+    // Create new request
+    let newRequest = {
+
+        from: user.email,
+
+        to: partner.email,
+
+        status: "pending"
+
+    };
+
+
+    // Add request
+    connectionRequests.push(newRequest);
+
+
+    // Save request
+    localStorage.setItem(
+        "connectionRequests",
+        JSON.stringify(connectionRequests)
+    );
+
+
     alert(
         "Connection request sent to " +
         partner.fullname + "!"
